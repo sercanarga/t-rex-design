@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/libs/uikit-3.0.0-rc.23/css/uikit.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Home</title>
+</head>
+<body>
+    <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-left uk-margin-large-left">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="#">Trex v1</a></li>
+                <li><a href="#">Anasayfa</a></li>
+                <li><a href="#">Hakkında</a></li>
+                <li><a href="#">Pazar</a></li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right uk-margin-large-right">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a>
+                        <div class="uk-button-group">
+                            <button class="uk-button uk-button-primary" uk-toggle="target: #register">Kayıt Ol</button>
+                            <button class="uk-button uk-button-default" uk-toggle="target: #login">Giriş Yap</button>
+                        </div>
+                    </a>
+                    </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="uk-container uk-margin-medium-top">
+        <h2>CONTENT</h2>
+    </div>
+    <div id="login" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">Giriş Yap</h2>
+            </div>
+            <div class="uk-modal-body">
+                <form class="uk-form-stacked">
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="name">Kullanıcı Adı / E-Posta:</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="name" type="text" placeholder="sercanarga">
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="password">Şifre:</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="password" type="password" placeholder="******">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="uk-modal-footer uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">İptal</button>
+                <button class="uk-button uk-button-primary" type="button">Giriş Yap</button>
+            </div>
+        </div>
+    </div>
+    <div id="register" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">Kayıt Ol</h2>
+            </div>
+            <div class="uk-modal-body">
+                <form class="uk-form-horizontal">
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="name">* Ad Soyad:</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="name" type="text" placeholder="Sercan Arğa">
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                            <label class="uk-form-label" for="name">* Kullanıcı Adı:</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="name" type="text" placeholder="sercanarga">
+                            </div>
+                        </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="email">* E-Posta:</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="email" type="text" placeholder="sercanarga@site.com">
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="password">* Şifre:</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="password" type="password" placeholder="******">
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="password2">* Şifre tekrar:</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="password2" type="password" placeholder="******">
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="sex">* Cinsiyet:</label>
+                        <div class="uk-form-controls">
+                            <select class="uk-select" id="sex">
+                                <option>Erkek</option>
+                                <option>Kadın</option>
+                                <option>Belirtmek İstemiyorum</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="referance">Referansınız:</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="referance" type="text" placeholder="sercanarga">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="uk-modal-footer uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">İptal</button>
+                <button class="uk-button uk-button-primary" type="button">Kayıt Ol</button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/libs/uikit-3.0.0-rc.23/js/uikit.min.js"></script>
+    <script src="assets/libs/uikit-3.0.0-rc.23/js/uikit-icons.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
