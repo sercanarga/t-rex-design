@@ -30,3 +30,7 @@ html {
   background-color: darkgrey;
   outline: 1px solid slategrey;
 }
+
+#username {
+    user-select: none;
+}
