@@ -1,3 +1,18 @@
-.uk-navbar-container {
-    border-bottom: 1px solid #e1e4e8;
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+html {
+    background: #F7F7F7 !important;
+    
+}
+
+.uk-heading-line {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em;
+}
+
+.canvas {
+    height: 250px;
+}
+.uk-table td {
+    padding: 0;
 }
